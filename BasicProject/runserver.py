@@ -2,22 +2,24 @@
 This script runs the application using a development server.
 It contains the definition of routes and views for the application.
 """
+import os
+from HelloFlask import app # Imports the code from HelloFlask/__init__.py
 
-from flask import Flask
-app = Flask(__name__)
+#from flask import Flask
+#app = Flask(__name__)
 
-# Make the WSGI interface available at the top level so wfastcgi can get it.
-wsgi_app = app.wsgi_app
+## Make the WSGI interface available at the top level so wfastcgi can get it.
+#wsgi_app = app.wsgi_app
 
 
-@app.route('/')
-def hello():
-    """Renders a sample page."""
-    return "Hello World!"
+#@app.route('/')
+#def hello():
+#    """Renders a sample page."""
+#    return "Hello World!"
 
 if __name__ == '__main__':
-    import os
     HOST = os.environ.get('SERVER_HOST', 'localhost')
+    
     try:
         PORT = int(os.environ.get('SERVER_PORT', '5555'))
     except ValueError:
