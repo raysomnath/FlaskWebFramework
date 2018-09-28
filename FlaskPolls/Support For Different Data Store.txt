@@ -1,0 +1,6 @@
+The following steps add support for a different data store than the three provided by the project template, if so desired:
+
+>    Copy memory.py to a new file so that you have the basic interface for the Repository class.
+>    Modify the implementation of the class as suits the data store you're using.
+>    Modify factory.py to add another elif case that recognizes the name for your added data store and imports the appropriate module.
+>    Modify settings.py to recognize another name in the REPOSITORY_NAME environment variable and to initialize REPOSITORY_SETTINGS accordingly.

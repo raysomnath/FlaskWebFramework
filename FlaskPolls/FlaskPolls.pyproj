@@ -76,6 +76,7 @@
     <Content Include="FlaskPolls\templates\index.html" />
     <Content Include="FlaskPolls\templates\layout.html" />
     <Content Include="FlaskPolls\templates\results.html" />
+    <Content Include="Support For Different Data Store.txt" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
